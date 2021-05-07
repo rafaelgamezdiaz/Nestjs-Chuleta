@@ -26,7 +26,19 @@ Instalar de forma global
 
 
 ### Crear un Modulo
+
+```
+ nest g module tasks
+```
+
+
+
 ### Crear un Controlador
+
+
+```
+ nest g controller tasks
+```
 ### Crear un Servicio
 
 
