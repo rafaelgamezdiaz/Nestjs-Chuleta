@@ -59,7 +59,7 @@ Instalar de forma global
 
 ### Modelos<a name="id_model"></a>
 
-Podemos definir los modelos ya sea a través de una **clase** o de una **interface**. La diferencia de implementar un módelo a partir de una interface o una clase es que una interface permite establecer la estructura en el momento de la compilación, pero una ver terminada la compilación no se preservan sus cualidades como unterfaco. En cambio si se implementa a partir de una clases si se preservan sus cualidades. Es aconsejable comenzar implementando un modelo como una interfaz, y solo los caso de que se requiera de debería cambiar a implementarlo a traves de una clase.
+Podemos definir los modelos ya sea a través de una **clase** o de una **interface**. La diferencia de implementar un módelo a partir de una interface o una clase es que una interface permite establecer la estructura en el momento de la compilación, pero una vez terminada la compilación no se preservan sus cualidades como interface. En cambio, si se implementa a partir de una clase, si se preservan sus cualidades. Es aconsejable comenzar implementando un modelo como una interfaz, y solo los caso de que se requiera de debería cambiar a implementarlo a traves de una clase.
 
 Ejemplo de un modelo creado a partir de una interface
 
@@ -70,4 +70,12 @@ Ejemplo de un modelo creado a partir de una interface
   description: string;
   status: TaskStatus;
  }
+ 
+ export enum TaskStatus {
+  OPEN = 'OPEN',
+  IN_PROGRESS = 'IN_PROGRESS',
+  DONE = 'DONE',
+}
 ```
+
+En el ejemplo hemos incluido además un caso en el que un campo del modelo se define a través de un enum, que puede aceptar sólo determinados valores.
