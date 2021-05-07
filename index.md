@@ -7,7 +7,6 @@
 3. [Iniciar el proyecto](#id_crear_proyecto)
 4. [Modulos](#id_module)
 5. [Controladores](#id_controller)
-6. [Servicios dentro de un controlador](#id_inject_services_in_controller)
 7. [Servicios](#id_service)
 8. [Modelos](#id_model)
 
@@ -64,7 +63,7 @@ Un controlador tiene la estruactura básica siguiente:
 
 El decorador **@Controller()** incluye internamente el nombre básico de la ruta, en este caso llamada example.
 
-#### Inyectar servicios dentro de un controlador<a name="id_inject_services_in_controller"></a>
+#### Inyectar servicios dentro de un controlador
 
 Dentro de un controlador podemos 
 
