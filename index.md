@@ -7,8 +7,9 @@
 3. [Iniciar el proyecto](#id_crear_proyecto)
 4. [Modulos](#id_module)
 5. [Controladores](#id_controller)
-6. [Servicios](#id_service)
-7. [Modelos](#id_model)
+6. [Servicios dentro de un controlador](#id_inject_services_in_controller)
+7. [Servicios](#id_service)
+8. [Modelos](#id_model)
 
 
 
@@ -45,10 +46,29 @@ Instalar de forma global
 
 ### Controladores<a name="id_controller"></a>
 
+Los controladores en Nestjs son los encargados de manejar las peticiones que se realizan a la API así como las respuestas que se retornan desde la misma. Para crear un cotrolador utilizamos el siguiente comando: 
 
 ```
  nest g controller tasks
 ```
+
+
+Un controlador tiene la estruactura básica siguiente:
+```
+ import { Controller } from '@nestjs/common';
+
+ @Controller('example')
+ export class ExampleController {
+ }
+```
+
+El decorador **@Controller()** incluye internamente el nombre básico de la ruta, en este caso llamada example.
+
+#### Inyectar servicios dentro de un controlador<a name="id_inject_services_in_controller"></a>
+
+Dentro de un controlador podemos 
+
+
 ### Servicios<a name="id_service"></a>
 
 
