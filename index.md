@@ -59,4 +59,7 @@ Instalar de forma global
 
 ### Modelos<a name="id_model"></a>
 
+Podemos definir los modelos ya sea a través de una **clase** o de una **interface**. La diferencia de implementar un módelo a partir de una interface o una clase es que una interface permite establecer la estructura en el momento de la compilación, pero una ver terminada la compilación no se preservan sus cualidades como unterfaco. En cambio si se implementa a partir de una clases si se preservan sus cualidades. Es aconsejable comenzar implementando un modelo como una interfaz, y solo los caso de que se requiera de debería cambiar a implementarlo a traves de una clase.
+
+
 
